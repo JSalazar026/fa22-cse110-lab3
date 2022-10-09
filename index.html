@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "UTF-8">
+    <link href = "assets/favicon.ico" rel = "icon">
+    <title>Meeting Minutes</title>
+  </head>
+  <body>
+    <header>
+        <h1>CSE 110 Meeting Prep</h1>
+        <h2>Introductions and Setting Ground Rules</h2>
+        <h3>October 5, 2022</h3>
+    </header>
+
+    <main>
+        <hr>
+        <nav>
+            <h4>Table of contents</h4>
+            <ul>
+                <li>Members Present at Meeting</li>
+                <li>Agenda Items to Cover</li>
+                <li>Resolving Business from Previous Meeting</li>
+                <li>Tasks to Do During This Meeting</li>
+                <li>Commentary or Concerns</li>
+                <li>Additional Meeting Notes</li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <section>
+            <h4>Present</h4>
+            <ul>
+                <li>Yuang Cui</li>
+                <li>Sky Hung</li>
+                <li>William Kim</li>
+                <li>Haonan He</li>
+                <li>Antonio Anguiano</li>
+                <li>Ryan O'Toole</li>
+                <li>Ruilin Hu</li>
+                <li>Gnamitha Naganathanahalli</li>
+                <li>Zhaoyu Zhang</li>
+                <li>Jose Salazar</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section>
+            <h4>Agenda Items</h4>
+            <ol>
+                <li>Develop Team Contract</li>
+                <li>Make GitHub organization for Team</li>
+                <li>How We Want to Brand Our Group</li>
+                <li>Provide Timeline and Milestones for Project</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h4>Business From the Previous Meeting</h4>
+            <p>There are no new developments relating to the last meeting. However, we
+                should remember the expectations that we should have for others in our team,
+                and expectations we should have for ourselves. <strong>Communication, accountability, and 
+                trust are going to be vital moving forward with the project. So be ready</strong>.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h4>New Business</h4>
+            <p>In order to function well as a team and to clearly know how we will proceed, we <em>need</em> to decide on a team contract
+                with the rules that we will each acknowledge and abide by. We should also consider how we want to brand ourselves.
+                This includes choosing a well-fitting name and a theme for our group. People will recognize us solely off of these things,
+                so whatever we choose needs to <b>pop</b>. Now concerning the development of the project, we will break up the project into <i>modules</i>.
+                We'll strive to complete each module by a certain deadline. 
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h4>Comments, Questions, or Concerns?</h4>
+            <ul>
+                <li>What do we report for our daily standup if we don't expect to work on the project for that day?</li>
+                <li>Are there any alternative meeting arrangements we can look into, such as having two meetings across the week for those who cannot regularly make it to this time?</li>
+            </ul>
+        </section>
+
+        <hr>
+        <h4>Images of Drawings during Meeting</h4>
+        <img src="assets/whiteboard_drawing.jpg" alt="Image of WHiteboard Drawings">
+        <hr>
+
+
+        <h4>Peaceful Video and Audio to lighten the mood</h4>
+        <audio controls src="assets/cool-chill-hip-hop-ambience-music-95-bpm-121533.mp3"></audio>
+        <video controls src="assets/Ocean-74888.mp4"></video>
+        <hr>
+
+        <details>
+            <summary>Meeting Prep</summary>
+            Discussed rules that would go into team contract, how we want to brand our team,
+            and the workflow of the team going into this project.
+        </details>
+        <hr>
+        <section>
+            <p>Thank you for attending the meeting. If you would like to get to know a little more about me, check out my <a href="https://jsalazar026.github.io/CSE-110-Lab-0-1/">GitHub pages site</a></p>
+        </section>
+        <hr>
+    </main>
+
+    <form method="get" class="Feedback form">
+        <div class="Feedback form">
+            <label>What is your name?</label>
+            <input type="text">
+            <br>
+            <label>How are you doing today?</label>
+            <input list="different_moods">
+            <datalist id="different_moods">
+                <option value="Awesome!">
+                <option value="Good">
+                <option value="Meh">
+                <option value="Bad :(">
+            </datalist>
+            <br>
+            <label>Choose a name for our team:</label>
+            <select>
+                <option value="">--Please choose an option--</option>
+                <option value="JP2 Round Table">JP2 Round Table</option>
+                <option value="Debuggers">Debuggers</option>
+                <option value="Inspect">Inspect</option>
+                <option value="ProForce">ProForce</option>
+            </select>
+            <fieldset>
+                <legend>What game should we play for our kickoff event?</legend>
+                
+                <span>
+                    <input type="radio" value="Among Us">
+                    <label>Among Us</label>
+                </span>
+    
+                <span>
+                    <input type="radio" value="Jackbox">
+                    <label>Jackbox</label>
+                </span>
+    
+                <span>
+                    <input type="radio" value="Quizbreaker">
+                    <label>Quizbreaker</label>
+                </span>
+    
+                <span>
+                    <input type="radio" value="Skribbl.io">
+                    <label>Skribbl.io</label>
+                </span>
+    
+            </fieldset>
+            <fieldset>
+                <legend>Which role(s) would you like to work in for this project?</legend>
+                <input type="checkbox">
+                <label>Planner</label>
+    
+                <input type="checkbox">
+                <label>Designer</label>
+    
+                <input type="checkbox">
+                <label>Developer</label>
+            </fieldset>
+            <br>
+            <label>Do you have any feedback for us?</label>
+            <textarea id="feedback"></textarea>
+            <br>
+            <label>What date did you fill out this form?</label>
+            <input type="date" min = "2022-09-22" max = "2023-12-31">
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <footer><p>2022 CSE 110</p></footer>
+  </body>
+</html>
