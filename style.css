@@ -27,6 +27,22 @@ a:active {
     color: red;
 }
 
+
+body {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
 .box {
     background-color: #567895;
     border: 5px solid #0b385f;
@@ -41,6 +57,15 @@ p {
   border-radius: 10vw;
 }
 
+
+#feedback {
+    max-width: 150px;
+}
+
+#peace_video {
+    position: sticky;
+    margin: 20px 20px 10px 10px;
+}
 #peace_video {
     position: sticky;
     width: 20vw
@@ -49,4 +74,11 @@ p {
 #peace_music {
     position: relative;
     height: 2in;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#whiteboard {
+    min-width: 20vmax;
 }
