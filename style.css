@@ -1,3 +1,14 @@
+/* import fonts into css stylesheet */
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('assets/playfairdisplay-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* add some color and text styling to the headers*/
 h1 {
     color: black;
     background-color:rgb(190, 80, 152);
@@ -18,6 +29,32 @@ h4 {
     color: rgb(68, 111, 190);
 }
 
+
+/* when you hover over the button or any link and press it, it'll turn red */
+button:hover, a:active {
+    color: red;
+}
+
+/* Type out the text leading to my GitHub page in a different font */
+a[href="https://jsalazar026.github.io/CSE-110-Lab-0-1/"] {
+    font-family:'playfair_displayitalic';
+}
+
+/* set the background-color of the whole page to green*/
+* {
+    background-color: lightgreen;
+}
+
+/* put some padding and adjust margins for the elements in the body */
+body {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
 button:hover, a:active {
     color: red;
 }
@@ -30,6 +67,37 @@ a[href="https://jsalazar026.github.io/CSE-110-Lab-0-1/"] {
     background-color: lightgreen;
 }
 
+/* If the screen of the device accessing the website is smaller than typical, adjust the line height */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+    body {
+      line-height: 1.4;
+    }
+  }
+
+  /* adjust the layout of the list and the image, video, audio 
+     and the order and format */
+ul.flex-container li {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
+.flex-container{ 
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    flex-grow: 100;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 620px 600px 750px 850px;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+}
 
 body {
     padding-left: 20px;
@@ -101,11 +169,12 @@ p {
   border-radius: 10vw;
 }
 
-
+/* limit the width of the feedback text box */
 #feedback {
     max-width: 150px;
 }
 
+/* adjust margins and dimensions of image, audio and video */
 #peace_video {
     position: sticky;
     margin: 20px 20px 10px 10px;
@@ -127,6 +196,25 @@ p {
     min-width: 20vmax;
 }
 
+
+/* make the text of the in order list bolder */
+
+ol > li {
+    font-weight:bolder;
+}
+
+/* place dashes 4 pixels wide around video */
+img ~ video {
+    outline: 4px dashed;
+}
+
+audio + video {
+    inline-size: 35em;
+}
+
+form.Feedback_form {
+    position: absolute;
+}
 
 ol > li {
     font-weight:bolder;
