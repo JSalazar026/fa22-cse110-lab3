@@ -30,6 +30,7 @@ a[href="https://jsalazar026.github.io/CSE-110-Lab-0-1/"] {
     background-color: lightgreen;
 }
 
+
 body {
     padding-left: 20px;
     padding-top: 10px;
@@ -76,6 +77,7 @@ p {
   border-radius: 10vw;
 }
 
+
 #feedback {
     max-width: 150px;
 }
@@ -83,12 +85,16 @@ p {
 #peace_video {
     position: sticky;
     margin: 20px 20px 10px 10px;
+}
+#peace_video {
+    position: sticky;
     width: 20vw
 }
 
 #peace_music {
     position: relative;
-    height: 4in;
+    height: 2in;
+
     margin-top: 20px;
     margin-bottom: 20px;
 }
