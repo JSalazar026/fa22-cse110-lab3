@@ -18,13 +18,16 @@ h4 {
     color: rgb(68, 111, 190);
 }
 
-
-button:hover {
-    color: blue;
+button:hover, a:active {
+    color: red;
 }
 
-a:active {
-    color: red;
+a[href="https://jsalazar026.github.io/CSE-110-Lab-0-1/"] {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+* {
+    background-color: lightgreen;
 }
 
 body {
@@ -37,19 +40,36 @@ body {
     margin-right: 20px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+    body {
+      line-height: 1.4;
+    }
+  }
+
 ul {
+    display: block;
     padding: 10px 20px 10px 20px;
     margin: auto;
 }
 
-.box {
-    background-color: #567895;
-    border: 5px solid #0b385f;
-    border-bottom-style: dashed;
-    color: #fff;
+.flex-container{ 
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    flex-grow: 100;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 620px 600px 750px 850px;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
   }
 
 p {
+  display: inline-block;
   border-color: rebeccapurple;
   border-style: groove;
   border-width: 1mm;
@@ -68,11 +88,16 @@ p {
 
 #peace_music {
     position: relative;
-    height: 2in;
+    height: 4in;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #whiteboard {
     min-width: 20vmax;
+}
+
+
+ol > li {
+    font-weight:bolder;
 }
