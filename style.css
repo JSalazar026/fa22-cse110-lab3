@@ -29,6 +29,7 @@ h4 {
     color: rgb(68, 111, 190);
 }
 
+
 /* when you hover over the button or any link and press it, it'll turn red */
 button:hover, a:active {
     color: red;
@@ -54,6 +55,17 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+button:hover, a:active {
+    color: red;
+}
+
+a[href="https://jsalazar026.github.io/CSE-110-Lab-0-1/"] {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+* {
+    background-color: lightgreen;
+}
 
 /* If the screen of the device accessing the website is smaller than typical, adjust the line height */
 @media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
@@ -65,6 +77,45 @@ body {
   /* adjust the layout of the list and the image, video, audio 
      and the order and format */
 ul.flex-container li {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
+.flex-container{ 
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    flex-grow: 100;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 620px 600px 750px 850px;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+}
+
+body {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+    body {
+      line-height: 1.4;
+    }
+  }
+
+ul {
     display: block;
     padding: 10px 20px 10px 20px;
     margin: auto;
@@ -145,6 +196,7 @@ p {
     min-width: 20vmax;
 }
 
+
 /* make the text of the in order list bolder */
 
 ol > li {
@@ -162,4 +214,8 @@ audio + video {
 
 form.Feedback_form {
     position: absolute;
+}
+
+ol > li {
+    font-weight:bolder;
 }
