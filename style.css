@@ -18,3 +18,35 @@ h4 {
     color: rgb(68, 111, 190);
 }
 
+button:hover {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+.box {
+    background-color: #567895;
+    border: 5px solid #0b385f;
+    border-bottom-style: dashed;
+    color: #fff;
+  }
+
+p {
+  border-color: rebeccapurple;
+  border-style: groove;
+  border-width: 1mm;
+  border-radius: 10vw;
+}
+
+#peace_video {
+    position: sticky;
+    width: 20vw
+}
+
+#peace_music {
+    position: relative;
+    height: 2in;
+}
+
